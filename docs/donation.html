@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('cl-theme');if(!t){t=matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';}if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<title>Donate — CoolerLCD Linux</title>
+<meta name="description" content="Support CoolerLCD Linux, an open-source native Linux driver for USB HID cooler LCD screens. Donate via PayPal, Bitcoin or Ethereum.">
+<link rel="canonical" href="https://coldwelderx.github.io/cooler-lcd-linux/donation.html">
+<meta name="theme-color" content="#070b0c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./"><b>CoolerLCD</b> Linux</a>
+    <nav>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#why">Why</a>
+      <a href="index.html#install">Install</a>
+      <a href="project-declaration.html">Declaration</a>
+      <a href="donation.html" aria-current="page">Donate</a>
+    </nav>
+    <div class="navright">
+      <button class="themebtn" id="themeBtn" type="button" aria-label="Toggle light or dark theme">
+        <svg class="i-moon" viewBox="0 0 24 24" width="17" height="17"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </button>
+      <a class="gh" href="https://github.com/coldwelderx/cooler-lcd-linux">★ GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="kicker rv">Support · open source</div>
+      <h1 class="rv">Support CoolerLCD Linux.</h1>
+      <p class="lead rv">The driver is free and MIT-licensed. Donations help cover hardware for compatibility testing, documentation, and long-term Linux maintenance. Pick whatever's easiest for you.</p>
+    </div>
+  </header>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="pay-grid">
+        <article class="pay-card feat rv">
+          <div class="pay-ic">PP</div>
+          <h3>PayPal</h3>
+          <p>Scan the QR with your phone to donate via PayPal.</p>
+          <img class="qr" src="qrcode.png" alt="PayPal donation QR code" width="170" height="170">
+        </article>
+
+        <article class="pay-card rv">
+          <div class="pay-ic">₿</div>
+          <h3>Bitcoin</h3>
+          <p>Public BTC donation address.</p>
+          <div class="wallet"><code id="btc">bc1qm78rsyghh5y9mdk7j9uxtlxdxsye56yz0lc4sm</code><button class="copy-btn" data-copy="btc" type="button">Copy</button></div>
+          <div class="small">Send only Bitcoin (BTC).</div>
+        </article>
+
+        <article class="pay-card rv">
+          <div class="pay-ic">Ξ</div>
+          <h3>Ethereum</h3>
+          <p>Public ETH donation address.</p>
+          <div class="wallet"><code id="eth">0xB7D383723Bd9ad39FfC75f3b1197d8b2Fe4FD913</code><button class="copy-btn" data-copy="eth" type="button">Copy</button></div>
+          <div class="small">Send only ETH on Ethereum mainnet.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="kicker rv">Where it goes</div>
+      <h2 class="rv" style="margin-top:14px">What support helps with.</h2>
+      <div class="cards">
+        <article class="card rv"><h3>Hardware testing</h3><p>Buying or borrowing compatible cooler LCD units to confirm behavior beyond a single device.</p></article>
+        <article class="card rv"><h3>Linux compatibility</h3><p>Testing across Debian-based distros, hidraw permissions, udev rules and systemd units.</p></article>
+        <article class="card rv"><h3>Documentation</h3><p>Maintaining install notes, the protocol spec, and troubleshooting guides.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="wrap band">
+      <div class="kicker rv">Safety</div>
+      <h2 class="rv">Donation safety.</h2>
+      <p class="rv">Donations go through external providers; this site collects no payment information. Wallet addresses are public-only — never share a seed phrase or private key.</p>
+      <div class="cta rv">
+        <a class="btn cyan" href="https://github.com/coldwelderx/cooler-lcd-linux">★ Star on GitHub</a>
+        <a class="btn ghost" href="index.html">Back to project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>MIT · interoperability driver · contains no vendor code</div>
+    <div class="links">
+      <a href="https://github.com/coldwelderx/cooler-lcd-linux">github</a>
+      <a href="https://github.com/coldwelderx/cooler-lcd-linux/blob/main/PROTOCOL.md">protocol</a>
+      <a href="project-declaration.html">declaration</a>
+      <a href="donation.html">donate</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

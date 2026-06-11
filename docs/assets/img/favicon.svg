@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CoolerLCD Linux 4:44 icon">
+  <rect width="64" height="64" rx="14" fill="#070b0c"/>
+  <circle cx="32" cy="32" r="27" fill="#0d181a" stroke="#00e5c7" stroke-width="4"/>
+  <circle cx="32" cy="7" r="3.6" fill="#eafffb"/>
+  <text x="32" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="900" fill="#eafffb" stroke="#00e5c7" stroke-width="0.5" paint-order="stroke">4:44</text>
+</svg>

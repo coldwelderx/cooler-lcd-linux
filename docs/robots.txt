@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coldwelderx.github.io/cooler-lcd-linux/sitemap.xml

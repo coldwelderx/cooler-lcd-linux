@@ -1,0 +1,7 @@
+# Grant non-root access to the cooler LCD HID device (VID 5131 / PID 2007).
+# Install: sudo cp 99-cooler-lcd.rules /etc/udev/rules.d/
+#          sudo udevadm control --reload-rules && sudo udevadm trigger
+# Then replug the cooler's USB cable.
+
+KERNEL=="hidraw*", ATTRS{idVendor}=="5131", ATTRS{idProduct}=="2007", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="5131", ATTRS{idProduct}=="2007", MODE="0666"

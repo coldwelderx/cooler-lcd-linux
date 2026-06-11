@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('cl-theme');if(!t){t=matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';}if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<title>Technical Declaration — CoolerLCD Linux</title>
+<meta name="description" content="Open-source technical declaration for CoolerLCD Linux, a native Linux interoperability driver for USB HID 5131:2007 CPU cooler LCD screens including Vevor YC-01-SS-002 compatible units.">
+<link rel="canonical" href="https://coldwelderx.github.io/cooler-lcd-linux/project-declaration.html">
+<meta name="theme-color" content="#070b0c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./"><b>CoolerLCD</b> Linux</a>
+    <nav>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#why">Why</a>
+      <a href="index.html#install">Install</a>
+      <a href="project-declaration.html" aria-current="page">Declaration</a>
+      <a href="donation.html">Donate</a>
+    </nav>
+    <div class="navright">
+      <button class="themebtn" id="themeBtn" type="button" aria-label="Toggle light or dark theme">
+        <svg class="i-moon" viewBox="0 0 24 24" width="17" height="17"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </button>
+      <a class="gh" href="https://github.com/coldwelderx/cooler-lcd-linux">★ GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="kicker rv">Project declaration</div>
+      <h1 class="rv">Open-source technical declaration.</h1>
+      <p class="lead rv">CoolerLCD Linux is an independent open-source interoperability project providing native Linux support for USB HID cooler LCD screens using the 5131:2007 controller.</p>
+    </div>
+  </header>
+
+  <section class="blk">
+    <div class="wrap">
+      <div class="doc">
+        <p class="rv">The project targets CPU cooler LCD displays sold under multiple brands and rebrands, including Vevor YC-01-SS-002 compatible units. Its purpose is to let Linux users display system information — CPU temperature, GPU temperature, fan speed, pump speed, memory usage and time — directly on the cooler screen, without Windows, Wine or vendor background software.</p>
+        <p class="rv">CoolerLCD Linux communicates with the device through the Linux hidraw interface and standard HID output reports. It includes no vendor code, firmware, trademarks, proprietary binaries or modified vendor software. It exists strictly as an interoperability driver for Linux users.</p>
+        <p class="rv">The project is designed for transparency, auditability and long-term maintenance. Protocol notes, installation steps and compatibility information are documented publicly so users can understand what the driver sends to the device and how the Linux service operates.</p>
+
+        <h2 class="rv">Primary compatibility focus</h2>
+        <ul class="rv">
+          <li>USB HID controller: 5131:2007</li>
+          <li>Linux hidraw interface</li>
+          <li>CPU cooler LCD screens</li>
+          <li>Vevor YC-01-SS-002 compatible LCD units</li>
+          <li>Rebranded circular AIO cooler displays using the same HID controller</li>
+        </ul>
+
+        <h2 class="rv">Project principles</h2>
+        <ul class="rv">
+          <li>No Windows dependency</li>
+          <li>No Wine dependency</li>
+          <li>No proprietary vendor code included</li>
+          <li>No telemetry</li>
+          <li>No cloud requirement</li>
+          <li>No unnecessary root execution</li>
+          <li>Open protocol documentation where possible</li>
+        </ul>
+
+        <h2 class="rv">Maintenance status</h2>
+        <p class="rv">CoolerLCD Linux is maintained as an open-source hardware interoperability project. Updates are published when compatibility, security, documentation or Linux support improvements are required.</p>
+        <p class="meta rv"><b>Last reviewed:</b> 2026-06-08</p>
+
+        <div class="cta rv">
+          <a class="btn cyan" href="donation.html">♥ Support the project</a>
+          <a class="btn ghost" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>MIT · interoperability driver · contains no vendor code</div>
+    <div class="links">
+      <a href="https://github.com/coldwelderx/cooler-lcd-linux">github</a>
+      <a href="https://github.com/coldwelderx/cooler-lcd-linux/blob/main/PROTOCOL.md">protocol</a>
+      <a href="project-declaration.html">declaration</a>
+      <a href="donation.html">donate</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

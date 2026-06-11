@@ -1,0 +1,49 @@
+{
+  "name": "CoolerLCD Linux",
+  "short_name": "CoolerLCD",
+  "description": "Native Linux support for USB HID 5131:2007 cooler LCD screens.",
+  "id": "/cooler-lcd-linux/",
+  "start_url": "/cooler-lcd-linux/",
+  "scope": "/cooler-lcd-linux/",
+  "display": "standalone",
+  "background_color": "#070b0c",
+  "theme_color": "#00e5c7",
+  "orientation": "portrait-primary",
+  "categories": [
+    "developer",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Donate",
+      "short_name": "Donate",
+      "description": "Support CoolerLCD Linux development.",
+      "url": "donation.html",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
