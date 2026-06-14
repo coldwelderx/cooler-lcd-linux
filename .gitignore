@@ -5,3 +5,14 @@ __pycache__/
 venv/
 .env
 *.log
+
+# Windows build artifacts
+build/
+dist/
+*.spec
+*.dll
+*.exe
+nssm/
+lhm/
+__pycache__/
+*.pyc
