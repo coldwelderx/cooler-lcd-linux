@@ -3,6 +3,12 @@ Description=Cooler LCD sensor feed (Vevor/HT HID 5131:2007)
 After=graphical-session.target
 
 [Service]
+# Wait for the NVIDIA driver to be ready before starting (max 30s).
+# On a dual-boot machine booting Linux right after Windows, the GPU can
+# take a few seconds to come up; without this the service may start while
+# NVML is not ready yet. The in-code _ensure_gpu() retry also covers this,
+# this is just a belt-and-suspenders guard.
+ExecStartPre=/bin/sh -c 'for i in $(seq 1 30); do /usr/bin/nvidia-smi -L >/dev/null 2>&1 && exit 0; sleep 1; done; exit 0'
 ExecStart=/usr/bin/python3 %h/vevor_lcd_linux.py
 Restart=always
 RestartSec=3
